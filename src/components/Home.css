@@ -1,0 +1,392 @@
+:root {
+  /* font-family: 'Montserrat', sans-serif; */
+  font-family: 'Work Sans', sans-serif !important;
+}
+
+.home-section {
+  background-image: url(./img/Background-2.jpg);
+  background-size: cover;
+  background-color: #afafaf;
+  background-blend-mode: multiply;
+  height: 95vh;
+}
+
+.home-title-container {
+  text-align: center;
+}
+
+.home-title {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0.3rem;
+  font-size: 5rem;
+  width: fit-content;
+  text-align: center;
+  line-height: 1em;
+  /* color: var(--clr-accent); */
+  color: #fff;
+  font-family: 'Work Sans', sans-serif !important;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.home-subtitle {
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1.5rem;
+  margin-top: 0;
+  margin-bottom: 5rem;
+  width: fit-content;
+  /* color: var(--clr-accent); */
+  color: #fff;
+  /* font-family: 'Montserrat', sans-serif; */
+  font-family: 'Work Sans', sans-serif !important;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+/* Services */
+.services-title {
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 5rem;
+  margin-bottom: 0;
+  width: fit-content;
+  color: var(--clr-accent);
+  /* font-family: 'Montserrat', sans-serif; */
+  font-family: 'Work Sans', sans-serif !important;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.services-h3 {
+  font-family: 'Work Sans', sans-serif !important;
+  font-size: 1.1rem;
+  margin-top: 3rem;
+  text-align: center;
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.services-textbox {
+  width: 80%;
+  max-width: 80%;
+  padding-top: 10vh;
+  /* padding-bottom: 7vw; */
+  padding-bottom: 25vh;
+  margin-right: auto;
+  margin-left: auto;
+  width: fit-content;
+}
+
+.services-textbox-aboutus {
+  width: 80%;
+  max-width: 80%;
+  padding-top: 10vh;
+  /* padding-bottom: 7vw; */
+  padding-bottom: 5vh;
+  margin-right: auto;
+  margin-left: auto;
+  width: fit-content;
+}
+
+.services-textbox-pharmaceuticals {
+  width: 80%;
+  max-width: 80%;
+  padding-top: 0vh;
+  /* padding-bottom: 7vw; */
+  padding-bottom: 25vh;
+  margin-right: auto;
+  margin-left: auto;
+  width: fit-content;
+}
+
+.services-textbox-vietnam {
+  width: 80%;
+  max-width: 80%;
+  padding-top: 5vh;
+  /* padding-bottom: 7vw; */
+  padding-bottom: 25vh;
+  margin-right: auto;
+  margin-left: auto;
+  width: fit-content;
+}
+
+.services-h2 {
+  font-family: 'Work Sans', sans-serif !important;
+  color: var(--clr-dark);
+  font-size: 1.5rem;
+  /* text-align: center; */
+}
+
+.services-p {
+  font-family: 'Work Sans', sans-serif !important;
+  color: var(--clr-dark);
+  font-size: 1.2rem;
+  /* text-align: center; */
+}
+
+.pharmaceuticals-1 {
+  height: 100%;
+}
+
+@media (max-width: 992px) {
+  .pharmaceuticals {
+    background-image: url(./img/Pharmacy-1.jpg);
+    background-size: cover;
+    background-color: rgba(70, 67, 65, 0.5);
+    background-blend-mode: multiply;
+    /* background-color: var(--clr-backgroundLight); */
+    overflow: hidden;
+    padding-top: 5vw;
+    padding-bottom: 5vw;
+  }
+
+  .PPE {
+    background-image: url(./img/PPE-2.jpg);
+    background-size: cover;
+    background-color: rgba(70, 67, 65, 0.5);
+    background-blend-mode: multiply;
+    /* background-color: var(--clr-backgroundLight); */
+    overflow: hidden;
+    padding-top: 5vw;
+    padding-bottom: 5vw;
+  }
+
+  .FMCG {
+    background-image: url(./img/FastConsumerGoods.jpg);
+    background-size: cover;
+    background-color: rgba(70, 67, 65, 0.5);
+    /* background-color: #fff; */
+    color: #fff;
+    background-blend-mode: multiply;
+    /* background-color: var(--clr-backgroundLight); */
+    overflow: hidden;
+    padding-top: 5vw;
+    padding-bottom: 5vw;
+  }
+
+  .services-p {
+    color: #fff;
+  }
+
+  .services-h2 {
+    color: #fff;
+  }
+}
+
+.service-col {
+  overflow: hidden;
+  height: 100%;
+  display: 'flex';
+}
+
+/* About us  */
+
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+  background-color: transparent;
+  padding-top: 5vh;
+  width: 100%;
+  height: 100%;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  /* background-color: #bbb; */
+  /* color: black; */
+}
+
+/* Style the back side */
+.flip-card-back {
+  /* background-color: dodgerblue; */
+  color: white;
+  transform: rotateY(180deg);
+}
+
+.flip-card-title {
+  font-size: 2rem;
+  padding-top: 7vh;
+}
+
+.flip-card-title-pharmaceuticals {
+  font-size: 2rem;
+  padding-top: 15vh;
+}
+
+.about-us-section {
+  /* background-image: url(./img/Background-1.jpg);
+  background-size: cover;
+  background-color: rgba(70, 67, 65, 0.5);
+  background-blend-mode: multiply; */
+  background-color: var(--clr-backgroundLight);
+  overflow: hidden;
+}
+
+.about-us-section-1 {
+  background-image: url(./img/vietnam2.jpg);
+  background-size: cover;
+  background-color: #afafaf;
+  background-blend-mode: multiply;
+  /* height: 95vh; */
+}
+
+.about-us {
+  background-color: #f8f9fa !important;
+  padding-top: 3rem;
+  padding: 5vw 5vw 5vw 5vw;
+}
+
+.about-us-image {
+  width: 20%;
+  display: block;
+  /* width: fit-content; */
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 1.3rem;
+}
+
+.about-us-title {
+  font-family: 'Work Sans', sans-serif !important;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 3rem;
+  width: fit-content;
+  margin-top: 4rem;
+  color: var(--clr-accent);
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.about-us-h3 {
+  font-family: 'Work Sans', sans-serif !important;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1.7rem;
+  width: fit-content;
+  text-align: center;
+  /* color: var(--clr-dark); */
+  color: #000;
+}
+
+.about-us-p {
+  font-family: 'Work Sans', sans-serif !important;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1.3rem;
+  width: fit-content;
+  text-align: center;
+  /* color: var(--clr-dark); */
+  color: #000;
+}
+
+.about-us-link-section {
+  background-color: rgba(207, 197, 189, 0.5);
+  background-blend-mode: multiply;
+}
+
+.about-us-link-section + .about-us-link-section {
+  border-left: 1px solid #fff;
+}
+
+.partner-container + .partner-container {
+  /* border-left: 1px dashed var(--clr-accent); */
+}
+
+.about-us-link-section:hover {
+  transition: transform 750ms cubic-bezier(0.5, 0, 0.5, 1), opacity 250ms linear;
+  transform: scale(1.1);
+}
+
+.home-h3 {
+  font-family: 'Work Sans', sans-serif !important;
+  font-size: 1.1rem;
+  margin-top: 3rem;
+  text-align: center;
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.home-h2 {
+  font-family: 'Work Sans', sans-serif !important;
+  font-size: 1.5rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  text-align: center;
+  max-width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* Contact Form */
+.contact-subtitle {
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1.5rem;
+  margin-top: 5vw;
+  width: fit-content;
+  color: var(--clr-accent);
+  /* color: #fff; */
+  /* font-family: 'Montserrat', sans-serif; */
+  font-family: 'Work Sans', sans-serif !important;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+/* .contact-form-div {
+  margin-right: auto;
+  margin-left: auto;
+  width: fit-content;
+} */
+
+label .ant-form-item-label {
+  color: #fff;
+}
+
+.contact-section {
+  background-image: url(./img/miami4.jpg);
+  background-size: cover;
+  background-color: rgba(70, 67, 65, 0.5);
+  background-blend-mode: multiply;
+  font-size: 1rem;
+  padding-top: 7vw;
+  padding-bottom: 7vw;
+}
+
+/* Footer */
+
+.footer-section {
+  background-color: #000;
+  color: #fff;
+  /* padding-top: 5vh; */
+  padding-left: 20vw;
+  padding-right: 20vw;
+}

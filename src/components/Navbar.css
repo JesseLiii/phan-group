@@ -1,0 +1,89 @@
+.AppHeader {
+  height: 115px;
+  width: 100%;
+  z-index: 1000;
+  flex-grow: 0;
+}
+
+.AppHeader-nav {
+  background: var(--clr-accent);
+  line-height: 60px;
+  /* border-top: 1px solid #e8e8e8; */
+  /* border-bottom: 1px solid var(--clr-dark); */
+  /* box-shadow: 0 5px 6px 0 rgba(0, 0, 0, 0.1); */
+  font-size: 1.1em;
+  transition: 0.3s all ease;
+}
+
+.AppHeader-nav-inner {
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+}
+
+.AppHeader-nav-inner-mobile {
+  display: flex;
+  /* justify-content: space-between; */
+  /* align-items: center; */
+}
+
+.AppHeader-nav-inner-links {
+  display: flex;
+  justify-content: space-evenly;
+  flex-grow: 1;
+  margin: 0 calc(17vw - 100px) 0 calc(17vw - 130px);
+}
+
+.nav-link {
+  /* margin-left: 1vw; */
+}
+
+.language-icon {
+  /* margin-left: 2vw; */
+  display: flex;
+  margin-right: 3vw;
+}
+
+.AppHeader-nav a {
+  align-items: center;
+  display: flex;
+  color: #000;
+  /* justify-content: center; */
+  /* margin-right: 5%; */
+  /* min-width: 130px; */
+  padding: 0 2vw;
+  transition: 0.3s all ease;
+}
+
+.AppHeader-nav span:hover,
+.AppHeader-nav a:hover {
+  color: #fff;
+}
+
+.AppHeader-nav a.active,
+.AppHeader-nav a.active:hover,
+.true,
+a.true {
+  border-bottom: 3px solid var(--clr-dark);
+  color: #222;
+  transform: none;
+}
+
+.no-border {
+  border-bottom: none !important;
+}
+
+a {
+  color: var(--clr-dark);
+  text-decoration: none;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+  -webkit-text-decoration-skip: objects;
+}
+
+.navbar-title {
+  color: var(--clr-dark);
+}

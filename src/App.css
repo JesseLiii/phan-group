@@ -1,38 +1,64 @@
-.App {
-  text-align: center;
+@import '~antd/dist/antd.css';
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html {
+  scroll-behavior: smooth;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+:root {
+  --clr-dark: #685641;
+  --clr-accent: #cabcab;
+  --clr-light: #edebe8;
+  --clr-backgroundLight: #f8f9fa !important;
+  --clr-blue: #2596be;
+  --clr-red: #a94230;
+
+  /* font-family: 'Montserrat', sans-serif; */
+  font-family: 'Roboto', sans-serif !important;
+}
+
+@media (min-width: 30em) {
+  :root {
+    font-size: calc(0.75rem + ((1vw - 0.3rem) * 0.625));
+    min-height: 0vw;
+  }
+}
+@media (min-width: 70em) {
+  :root {
+    font-size: 1rem;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.section {
+  margin: 0 5vw;
 }
 
-.App-link {
-  color: #61dafb;
+.sub-title {
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: var(--clr-dark);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+p {
+  color: var(--clr-accent);
+}
+
+h3,
+h2,
+h1 {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: var(--clr-accent);
+}
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
+  width: fit-content;
 }
